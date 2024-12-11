@@ -1,0 +1,178 @@
+
+<html>
+  <head>
+    <title>Delicry Sign-up</title>
+    <style>
+      body{
+        background-image: url("pexels-photo-1525041.jpeg");
+        background-size: cover;
+      }
+      
+             /*----- POP UP CSS -----*/
+      .form {
+        background-color: #232323;
+        display: block;
+        padding: 5px;
+        max-width: 350px;
+        border-radius: 20px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px 1px;
+        text-align: center;
+      }
+      .title {
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 800;
+        text-align: center;
+        color: black;
+      }
+      .spacebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .spacebar, input .form {
+        outline: none;
+        border: 0px solid #e5e7eb;
+        margin: 15px 0;
+      }
+      .spacebar input {
+        background-color: #383838;
+        border: solid 1px black;
+        padding: 15px;
+        padding-right: 10px;
+        font-size: 15px;
+        line-height: 10px;
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      .submit {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #696969;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        max-width: 500px;
+        margin: 10px auto;
+        padding: 15px 100px;
+        border-radius: 25px;
+        text-transform: uppercase;
+        border: solid 2px black;
+      }
+      .submit:active {
+        background-color: #474747;
+        transform: scale(0.95);
+        border-color: darkgray;
+        color: ghostwhite;
+      }
+      .signup-link {
+        color: #6B7280;
+        font-size: 15px;
+        line-height: 10px;
+        text-align: center;
+      }
+      .signup-link a {
+        text-decoration: underline;
+      }
+      .parent-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      /*---- CONTENT CSS ----*/
+      *{
+                padding: 0;
+                margin: 0;
+                font-family: monospace;
+            }
+            ul{
+                list-style: none;
+                background: black;
+            }
+            ul li {
+                display: inline-block;
+                position: relative;
+            }
+            ul li a{
+                display: block;
+                padding: 20px 25px;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                font-size: 20px;
+            }
+            ul li ul.dropdown li {
+                display: block;
+            }
+            ul li ul.dropdown {
+                width: 100%;
+                background: black;
+                position: absolute;
+                z-index: 999;
+                display: none;
+            }
+            ul li a:hover{
+                background: rgb(44, 43, 43);
+            }
+          ul li:hover ul.dropdown {
+                display: block;
+            }
+            ul h1{
+                color: white;
+                text-align: center;
+            }
+            p{
+                font-size: 25px;
+                text-align: center;
+            }
+    </style>
+  </head>
+  <body>
+    <!--- content --->
+    <ul>
+      <h1>Delicry.com</h1>
+      <li><a href="Home page.html">Home Page</a></li>
+  <li><a href="Search.html">Search</a></li>
+  <li><a href="">About us</a>
+      <ul class="dropdown">
+          <li><a href="About us.html">About this page</a></li>
+          <li><a href="Contacts.html">Contacts</a></li>
+          <li><a href="Gmails.html">Gmail</a></li>
+      </ul>
+  </li>
+  <li><a href="sign in part 2.html">Sign In</a></li>
+  <li><a href="sign up.html">Sign Up </a></li>
+  </ul>
+
+
+  <!----pop up sign in/up --->
+    <div class="parent-form">
+     <form class="form">
+      <p class="title">Create Your Account</p>
+      <div class="spacebar">
+        <input type="text" placeholder="Username" required />
+      </div>
+      <div class="spacebar">
+        <input type="email" placeholder="Email" required />
+      </div>
+      <div class="spacebar">
+        <input type="password" placeholder="Password" required />
+      </div>
+      <div class="spacebar">
+        <input type="password" placeholder="Confirm Password" required />
+      </div>
+      <button type="submit" class="submit">Sign Up</button>
+      <p class="signup-link">
+        Already have an account?
+        <a href="sign in part 2.html">Sign in</a>
+      </p>
+     </form>
+    </div>
+  </body>
+</html>
